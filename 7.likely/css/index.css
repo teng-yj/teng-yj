@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+button{
+	background: url('../img/num.svg');
+	width:30px;
+	height:30px;
+}
+
+
+#speed{
+	margin: 0 auto;
+	width: 310px;
+	margin-top: 350px;
+}
+
+.box{
+	width:470px;
+	margin: 10px auto;
+	position: relative;
+}
+
+.rotation{
+	height: 900px;
+	animation: switch 5s ease-out infinite;
+}
+
+

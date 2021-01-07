@@ -1,0 +1,67 @@
+#mar{
+	width: 1010px;
+	height: auto;
+	min-height: 202px;
+	background: lightblue;
+	position: relative;
+	display: block;
+	border-radius: 20px;
+}
+
+.center{
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 1010px;
+	height: auto;
+}
+#mar>div{
+	width: 200px;
+	height: 200px;
+	background: gray;
+	float: left; 
+	line-height: 200px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 20px;
+
+}
+
+button{
+	float: left;
+	margin-left: 50px;
+	border-radius: 20px;
+
+}
+
+button,#lotto{
+	height: 100px;
+	width: 200px;
+	background: red;
+	color: #fff;
+	/*font-size: 10px;*/
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+	/*float: left;*/
+	border: 1px solid #000;
+	border-radius: 20px;
+
+}
+
+.winers{
+	width: auto;
+	height: 180px;
+	background: rgba(255,0,0,.6);
+	top: 210px;
+	left: 450px;
+	position: fixed;
+	display: none;
+	border-radius: 20px;
+
+}
+
+.clearfix:after{
+	content: " ";
+	display: block;
+	clear: both;
+}

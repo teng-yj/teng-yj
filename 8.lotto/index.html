@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>抽奖系统</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="center">
+		一等奖：<input type="text" id ="oner" name="" value="1">
+		二等奖：<input type="text" id ="twor" name="" value="1">
+		三等奖：<input type="text" id ="threer" name="" value="1">
+
+		<div id ="mar" class="clearfix">
+			
+		</div>
+
+		<button onclick="qq()">添加</button>
+			<button id="lotto" onclick="start()">
+				开始
+			</button> 
+		<div class="winers" id="winers">
+			<p>获奖名单：</p>
+			一等奖：<span id="one"></span><br><br>
+			二等奖：<span id="two"></span><br><br>
+			三等奖：<span id="three"></span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
