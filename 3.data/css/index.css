@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    color: #fff;
+}
+
+div.box{
+    width: 300px;
+    height: 800px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+div.box>div{
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* div.box>div:hover{
+    background: lightgray;
+} */
+
+#container,#today{
+    width: 260px;
+    height:auto;
+}
+
