@@ -1,0 +1,147 @@
+body
+{
+	background: #ddf4ff url("../img/bg1.jpg") repeat-x;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+
+.red{
+	color: red;
+	margin-left: -20px;
+}
+
+/*main*/
+.main{
+	width: 920px;
+	height: 1920px;
+	margin: 0 auto;
+}
+
+.main .header{
+	height: 120px;
+	background: url("../img/bg2.jpg") no-repeat;
+	background-size: 100% 120px; 
+	width: auto;
+}
+
+.main .caption{
+	width: 920px;
+	height: auto;
+	background: #fff;
+}
+
+/*caption*/
+.caption .ca_main{
+	margin: 0 auto;
+	height: auto;
+	padding-top: 50px;
+	padding: 50px 100px 10px;
+}
+
+.caption .ca_main h1{
+	text-align: center;
+	color: dodgerblue;
+}
+.caption .cont{
+	/*text-align: left;*/
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-weight: 600;
+}
+
+.caption .cont .infor .red{
+	margin-left: 0px;
+}
+
+.caption .cont .infor textarea{
+	margin-top: 5px;
+	margin-left: 40px;
+}
+
+.caption .ca_main .exam .exam_1{
+	color: #c6c6c6;
+	margin-left: 20px;
+}
+
+
+.caption .ca_main .exam form span:nth-of-type(2n){
+	font-weight: 600;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+
+.caption .ca_main .exam #first{
+	margin-top: 20px;
+}
+
+.caption .ca_main .exam input{
+	margin-top: 10px;
+}
+
+.caption .ca_main .exam .button{
+	margin: 40px 300px;
+	border: none;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	background: dodgerblue;
+	color: #fff;
+}
+
+.caption .ca_main .exam .hover:hover{
+	background-color: #e4e4e4;
+	width: auto;
+}
+
+/*报错*/
+.wro{
+	width: auto;
+	height: 20px;
+	border: 1px solid red;
+}
+
+.square{
+	margin: 20px 0;
+	width: 720px;
+	height: auto;
+	padding-bottom: 40px; 
+	position: relative;
+}
+
+.infor{
+	padding: 40px 0;
+	position: relative;
+}
+
+.infor p{
+	position: absolute;
+	color: red;
+	left: 10px;
+}
+
+.square p{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	color: red;
+}
+
+#count{
+	font-size: 40px;
+	color: red;
+	position: fixed;
+	top: 132px;
+	right: 0px;
+	z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+

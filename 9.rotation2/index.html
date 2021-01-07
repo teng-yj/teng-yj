@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<header>
+		<div class="mar">
+			<input type="checkbox" onchange="change(this)" name="">间隔停顿
+			<select id="speed">
+				<option value="low">慢</option>
+				<option value="mid">中</option>
+				<option value="fast">快</option>
+			</select>
+			滚动速度：
+			<select onchange="change_value()" id='speed2'>
+				<option value="low2">慢</option>
+				<option value="mid2">中</option>
+				<option value="fast2">快</option>
+			</select>
+		</div>
+	</header>
+	<div class="big">
+		<div class="btn_left" onclick="btn_left1();"></div>
+		<div class="small">
+			<div class="move" id="move">
+				<img src="img/2.jpg">
+				<img src="img/1.jpg">
+				<img src="img/4.jpg">
+				<img src="img/2.jpg">
+				<img src="img/1.jpg">
+				<img src="img/4.jpg">
+			</div>
+		</div>
+		<div class="btn_right" onclick="btn_right1();"></div>
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
