@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body{
+	color: #fff;
+}
+
+button{
+	margin: 20px 18px 0 18px;
+	height: 30px;
+	background-image: linear-gradient(#88d0ec, #2882c5,#0a3875);
+	width: 80px;
+	border-radius: 20px;
+	background-size:100%;
+	float: left;
+	color: #fff;
+}
+
+input{
+	margin-top: 10px;
+	height: 20px;
+	border-radius: 20px;
+	color: #ff7900;
+	text-indent: 10px;
+}
+
+button:hover{
+	background-image: linear-gradient(#fce3c8,#f6c368, #f49e15);
+	color: red;
+}
+
+#go{
+	width: 80%;
+	margin: 20px 20px;
+	border-radius: 20px;
+	background-image: linear-gradient(#88d0ec, #2882c5,#0a3875);
+}
+
+#go:hover{
+	background-image: linear-gradient(#fce3c8,#f6c368, #f49e15);
+}
+
+#del1{
+	/*margin-left: 60px;*/
+}
+
+.mid{
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+	padding: 20px;
+	background: url("../img/ling.jpg") no-repeat;
+	background-size: 100% ;
+	opacity: 0.7;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.data{
+	width: 30%;
+	text-align: center;
+	float: left;
+	margin-top: 40px;
+	margin-left: 80px;
+	background: rgba(0,0,0,.4);
+	padding: 40px;
+	border-radius: 20px;
+
+}
+
+#time3{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.button{
+	
+}
+
+.txt{
+	width: 30%;
+	height: auto;
+	float: right;
+	margin-top: 40px; 
+	margin-right: 80px;
+	border: 1px solid lightblue;
+	background: rgba(0,0,0,.4);
+	text-align: center;
+	border-radius: 20px;
+	color: #ff7900;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>铃声系统</title>
+
+	</head>
+	<body onload="">
+		
+			
+		<div class="mid" id="mid">
+			<div id="time3">
+					<img id="img1" src = "img/0.png">
+					<img id="img2" src = "img/0.png">
+					<img id="img3" src = "img/0.png">
+					<img id="img4" src = "img/0.png">
+					<img id="img5" src = "img/year.png">
+					<img id="img6" src = "img/0.png">
+					<img id="img7" src = "img/0.png">
+					<img id="img8" src = "img/month.png">
+					<img id="img9" src = "img/0.png">
+					<img id="img10" src = "img/0.png">
+					<img id="img11" src = "img/day.png">
+					<img id="img12" src = "img/week.png">
+					<img id="img13" src = "img/one.png"><br>
+					<img id="img14" src = "img/0.png">
+					<img id="img15" src = "img/0.png">
+					<img id="img16" src = "img/sign.png">
+					<img id="img17" src = "img/0.png">
+					<img id="img18" src = "img/0.png">
+					<img id="img19" src = "img/sign.png">
+					<img id="img20" src = "img/0.png">
+					<img id="img21" src = "img/0.png">
+
+
+			</div>
+			<div class="mid2" id="mid2">
+			<div class="data">
+				课程：<input id="in0" type="text" /><br>
+				小时：<input id="in1" type="text" /><br>
+				分钟：<input id="in2" type="text" /><br>
+				秒钟：<input id="in3" type="text" /><br>
+				<div class="button">
+					<button id="add1" onclick="add()">添加</button>
+					<button id="del1" onclick="del()">删除</button>
+				</div>
+				<button id="go" onclick="time1()">点击开始</button>
+				<div id="miusic">
+					<audio id="miu" controls style="display: none;">
+					  <source src="audio/tt.mp3" type="audio/mpeg">
+					  您的浏览器不支持 audio 元素。
+					</audio>
+				</div>
+			</div>
+			<div class="txt" id="txt">  
+				<p>定时时间：</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="js/index.js"></script>

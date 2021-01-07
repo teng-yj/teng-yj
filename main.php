@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>tengyj网站</title>
+	<link rel="shortcut icon" href="img/tyj.ico" />
+	<link rel="stylesheet" type="text/css" href="img/font/iconfont.css">
+	<style type="text/css">
+		.body{
+			width: 95%;
+			height: 1000px;
+			background: url("img/3.jpg") no-repeat;
+			background-size: contain;
+			background-size: 100% 100%; 
+			margin: 0 auto;
+		}
+		.mar{
+			margin: 0 auto;
+			background: #000;
+			filter: alpha(opacity=60);
+			opacity: 0.6;
+			-moz-opacity: 0.6;
+			height: auto;
+			padding: 20px;
+		}
+		.mar .con{
+			height: 24px;
+			margin: 0 auto;
+			width: 94%;
+			text-align: center;
+		}
+		.mar a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 18px;
+			float: left;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.mar a:visited{
+			color: #fff;
+		}
+		.mar a:hover{
+			color: lightblue;
+			text-decoration: underline;
+		}
+		.mar a:active{
+			color: red;
+			text-decoration: underline;
+		}
+
+		#logo{
+			position: fixed;
+			left: 60px;
+			top: 30px;
+		}
+		.fram{
+			margin: 0 auto;
+			margin-top: 10px;
+			height: 700px;
+		}
+		
+		.display{
+			display: none;
+		}
+
+		#d01{
+			display: block;
+		}
+		.logo2{
+			position: fixed;
+			right: 60px;
+			bottom: 100px;
+			color: #ccc;
+		}
+		
+		table{
+			border: 2px solid #000000;
+			
+		}
+		
+		.info{
+			position: fixed;
+			top: 40px;
+			right: 70px;
+		}
+		
+		.info ul{
+			list-style: none;
+		}
+		
+		.info ul li{
+			float: left;
+		}
+		
+		.info a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.clearfix{
+			clear: both;
+			display: block;
+			content: " ";
+		}
+	</style>
+</head>
+<body>
+<div class="body">
+	<img id="logo" src="img/logo.png" width="100px" />
+	<div class="logo2">
+		<img onmouseenter="big()" onmouseleave="sma()" id="logo2" src="img/logo2.jpg" width="100px"/>
+		<p>扫码关注CSDN</p>
+	</div>
+	<center><img src="img/teng.png"></center>
+	<div class="mar clearfix">
+		<div class="con clearfix">
+			<a id="a01" onmouseover="over('01')" href="1.calculator"><i class="iconfont icon-jisuanqi"></i>进入计算器</a>
+			<a id="a02" onmouseover="over('02')" href="2.ringing"><i class="iconfont icon-lingdang"></i>进入铃声系统</a>
+			<a id="a03" onmouseover="over('03')" href="3.data"><i class="iconfont icon-riqi"></i>进入日期系统</a>
+			<a id="a04" onmouseover="over('04')" href="4.office"><i class="iconfont icon-Office"></i>进入office答题系统</a>
+			<a id="a05" onmouseover="over('05')" href="5.word"><i class="iconfont icon-office-word"></i>进入word答题系统</a>
+			<a id="a06" onmouseover="over('06')" href="6.rotation"><i class="iconfont icon-lunbotuguanli"></i>进入轮播图系统</a>
+			<a id="a07" onmouseover="over('07')" href="7.likely"><i class="iconfont icon-dianzan"></i>进入点赞系统</a>
+			<a id="a08" onmouseover="over('08')" href="8.lotto"><i class="iconfont icon-choujiang"></i>进入抽奖系统</a>
+			<a id="a09" onmouseover="over('09')" href="9.rotation2"><i class="iconfont icon-lunbotuguanli"></i>进入轮播图2系统</a>
+			<a id="a10" onmouseover="over('10')" href="10.ppt"><i class="iconfont icon-office-pptx"></i>进入ppt答题系统</a>
+		</div>
+	</div>
+
+	<div class="fram">
+		<iframe frameborder="0" class="display" id="d01" width="100%" height="100%" src="1.calculator/"></iframe>
+		<iframe frameborder="0" class="display" id="d03" width="100%" height="100%" src="3.data/"></iframe>
+		<iframe frameborder="0" class="display" id="d02" width="100%" height="100%" src="2.ringing/"></iframe>
+		<iframe frameborder="0" class="display" id="d04" width="100%" height="100%" src="4.office/"></iframe>
+		<iframe frameborder="0" class="display" id="d05" width="100%" height="100%" src="5.word/"></iframe>
+		<iframe frameborder="0" class="display" id="d06" width="100%" height="100%" src="6.rotation/"></iframe>
+		<iframe frameborder="0" class="display" id="d07" width="100%" height="100%" src="7.likely/"></iframe>
+		<iframe frameborder="0" class="display" id="d08" width="100%" height="100%" src="8.lotto/"></iframe>
+		<iframe frameborder="0" class="display" id="d09" width="100%" height="100%" src="9.rotation2/"></iframe>
+		<iframe frameborder="0" class="display" id="d10" width="100%" height="100%" src="10.ppt/"></iframe>
+	</div>
+	<div class="info">
+		<ul>
+			<li><?php echo $_POST['name']; ?>--欢迎登录！(●'◡'●)</li>
+		</ul>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	let dis = document.getElementsByClassName('display');
+	function over(add){
+		for(let i=0;i<dis.length;i++){
+			dis[i].style.display = 'none';
+		}
+		let tt = 'd' + add;
+		dis[tt].style.display = 'block';
+	}
+
+	function big(){
+		const small = document.getElementById('logo2');
+		small.style.width = '300px';
+	}
+
+	function sma(){
+		const small = document.getElementById('logo2');
+		small.style.width = '100px';
+	}
+
+</script>
+</body>
+</html>
