@@ -1,0 +1,31 @@
+table{
+	border-collapse: collapse;
+	margin: auto; 
+}
+
+td{
+	width: 150px;
+	line-height: 70px;
+}
+
+.btn,.btn_click{
+	width: 150px;
+	line-height: 70px;
+	font-size: x-large;
+	/*background: none;*/
+}
+
+.btn_click{
+	width: 302px;
+}
+
+.btn:hover,.btn_click:hover{
+	background: rgba(0,0,250,.4);
+}
+
+.txt{
+	width: 600px;
+	line-height: 100px;
+	font-size: x-large;
+	text-align: right;
+}
